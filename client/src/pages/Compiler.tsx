@@ -5,6 +5,7 @@ import {
 } from "@/components/ui/resizable";
 import CodeEditor from '../components/CodeEditor'
 import CodeHeader from "@/components/CodeHeader";
+import RenderCode from "@/components/RenderCode";
 
 const Compiler = () => {
   return (
@@ -15,7 +16,7 @@ const Compiler = () => {
       </ResizablePanel>
       <ResizableHandle />
       <ResizablePanel className="h-[calc(100dvh-60px)] min-w-[400px]">
-        Right
+        <RenderCode />
       </ResizablePanel>
     </ResizablePanelGroup>
   );
